@@ -1,6 +1,5 @@
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
-import "../styles/Home.css"
 import { useEffect } from "react";
 
 const Patient = () => {

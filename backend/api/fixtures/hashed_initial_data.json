@@ -1,0 +1,1122 @@
+[
+    {
+        "model": "api.user",
+        "pk": 1,
+        "fields": {
+            "username": "admin",
+            "password": "pbkdf2_sha256$870000$coOyNjcUrsg9c0CA3rU9Js$sfBLa6xY/gX5+HHGOCjdT1NG0NnpUlAC3h25gBmpCQk=",
+            "role": "administrator",
+            "email": "admin@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 2,
+        "fields": {
+            "username": "johndoe",
+            "password": "pbkdf2_sha256$870000$ERXN1WNCodgX8PmkwHEKYJ$u1So8bpkVm7Dj72I+6wJg5HSBQdWKNrZUNQTfWDminw=",
+            "role": "medicalStaff",
+            "email": "johndoe@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 3,
+        "fields": {
+            "username": "janesmith",
+            "password": "pbkdf2_sha256$870000$9VIJpX8qfgVHLj45KMMwG7$GZzrGvC+6wAUEOTsBpdHnlUH+51s/jAByMdVGkVz9DI=",
+            "role": "medicalStaff",
+            "email": "janesmith@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 4,
+        "fields": {
+            "username": "sarahlee",
+            "password": "pbkdf2_sha256$870000$7zMbglZiCI5RJJG4j2wOEb$Jz5SwRDVYwqxOC+/l3wzVDlg0Rb33rBnUTIlFdtmVFw=",
+            "role": "medicalStaff",
+            "email": "sarahlee@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 5,
+        "fields": {
+            "username": "michaeljohnson",
+            "password": "pbkdf2_sha256$870000$BXcKFcnDJuXKlnCyE5daPG$AE0lrKSf4rJggaZBh1kY2TeAeqqCbAtYx9uNOQftrP8=",
+            "role": "medicalStaff",
+            "email": "michaeljohnson@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 6,
+        "fields": {
+            "username": "emilydavis",
+            "password": "pbkdf2_sha256$870000$Nn8rkUzZ9olKeblNqBsNaz$LhZzm3wepeMrIJd20UP7UtXZZDwU0JqMWyFSC8F+cbo=",
+            "role": "medicalStaff",
+            "email": "emilydavis@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 7,
+        "fields": {
+            "username": "davidwhite",
+            "password": "pbkdf2_sha256$870000$0sj00FVXe6qfQq4eQaABQg$vT59RPtOA5s6qi0ajC73C/ZUmY3sJCK9OpGaeuaGFEI=",
+            "role": "medicalStaff",
+            "email": "davidwhite@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 8,
+        "fields": {
+            "username": "lauraclark",
+            "password": "pbkdf2_sha256$870000$gNTYhxBqV4RlaCCigrn3jt$sddP35aF1emx+9ye6/OumaTvVheyYE/cEbw84Cxmf6s=",
+            "role": "medicalStaff",
+            "email": "lauraclark@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 9,
+        "fields": {
+            "username": "williamharris",
+            "password": "pbkdf2_sha256$870000$rNhBnCRWTAQPnZ187aR0WK$69fkF8SLbDxe/i560ZcvyAoc2MhB3MJpxcZ+sLO635c=",
+            "role": "medicalStaff",
+            "email": "williamharris@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 10,
+        "fields": {
+            "username": "oliviamartin",
+            "password": "pbkdf2_sha256$870000$OAnKMlZFS5wZO8XTvzQN0S$wKj7HwWjI+4GRCSlSlRzFKmXV8QPXh/9fxS8pLYLFT4=",
+            "role": "medicalStaff",
+            "email": "oliviamartin@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 11,
+        "fields": {
+            "username": "jamestaylor",
+            "password": "pbkdf2_sha256$870000$INQ4Es65Nx3JPCsA7WXaVw$TpYFP3YOd5h1wI/uZD4T/frZ7ihP7KnvpFhTvI5Hp1E=",
+            "role": "medicalStaff",
+            "email": "jamestaylor@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 12,
+        "fields": {
+            "username": "alicebrown",
+            "password": "pbkdf2_sha256$870000$u8iyc45LxO9GkK8WPE6n5j$4YwCQtNYjrua0Gsy0K5D2NduWSqlyT7seFheQi39WcQ=",
+            "role": "patient",
+            "email": "alicebrown@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 13,
+        "fields": {
+            "username": "bobwhite",
+            "password": "pbkdf2_sha256$870000$bnfuWSPmgGwZbsJiMcEbmD$w3nBcWgvrCiU+3WeRIsXO9psLVANpTxvzU+/CgpQVXs=",
+            "role": "patient",
+            "email": "bobwhite@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 14,
+        "fields": {
+            "username": "charlieblack",
+            "password": "pbkdf2_sha256$870000$rcUwEcQeFTvL6uHhRFWApZ$qrXaBCpCa6APGGbAxB+8twmFOaIcI1nqoexcep03wCM=",
+            "role": "patient",
+            "email": "charlieblack@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 15,
+        "fields": {
+            "username": "dianagreen",
+            "password": "pbkdf2_sha256$870000$TBP4OkC1KXU3e6X7atyRGe$7W3g/oZSaB8hHYs/lylKXhxANszLLFibLqNd0tNjkQs=",
+            "role": "patient",
+            "email": "dianagreen@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 16,
+        "fields": {
+            "username": "evablue",
+            "password": "pbkdf2_sha256$870000$5pds6E67YNP7oDDWf7gwVa$XvOYovizwtXPOffVSzMIhEme5pUGZkfGZ8hJu9w0GfQ=",
+            "role": "patient",
+            "email": "evablue@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 17,
+        "fields": {
+            "username": "frankred",
+            "password": "pbkdf2_sha256$870000$ESaJhxm1NXxsDIpzGpk2S4$Mp8eSsKAtnC/QqsqGEZv9EEGiPObRWnplOJ8fM9eIMY=",
+            "role": "patient",
+            "email": "frankred@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 18,
+        "fields": {
+            "username": "graceyellow",
+            "password": "pbkdf2_sha256$870000$NZ4fZprBrIiqaE8bbvgBEo$d0RO1cwHp2m5uK7ff5FL5TKZd0Hj7kZQc8XaP4/hQJY=",
+            "role": "patient",
+            "email": "graceyellow@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 19,
+        "fields": {
+            "username": "henrypurple",
+            "password": "pbkdf2_sha256$870000$jJoRmPGuG4E1uilsCU1N41$XLlei+DDNRmLZaYvvk1fz50G3F5sPWumiYn8DGkr0Xw=",
+            "role": "patient",
+            "email": "henrypurple@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 20,
+        "fields": {
+            "username": "islapink",
+            "password": "pbkdf2_sha256$870000$ficuwu1L6P25dALR1ATOCs$tYCpJ6AxAnm5l/FHzT/Svgodrguk2AlvtW1xG3Rq34s=",
+            "role": "patient",
+            "email": "islapink@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 21,
+        "fields": {
+            "username": "jackgrey",
+            "password": "pbkdf2_sha256$870000$lQ5O6DsHeMCu0xrRrS6yLx$ucBIELv1AV6M/K0iQutsvAvRjfyIBrKJHghRuotj8Q4=",
+            "role": "patient",
+            "email": "jackgrey@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 22,
+        "fields": {
+            "username": "karenblack",
+            "password": "pbkdf2_sha256$870000$fBB1EhWyhIi2iWGtD9s5sw$ai58y+ZPvU+vaJir2SE0/1doC6eKtAoabuXhio/opHw=",
+            "role": "patient",
+            "email": "karenblack@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 23,
+        "fields": {
+            "username": "louiseclear",
+            "password": "pbkdf2_sha256$870000$d5IVJFIB8SJWGOiO0Mp08s$lP3+5KxrEAeA6F9I5DI9+3k+GP8bxotXrmF9wDeo1kE=",
+            "role": "patient",
+            "email": "louiseclear@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 24,
+        "fields": {
+            "username": "martinsilver",
+            "password": "pbkdf2_sha256$870000$DAqABwIYm3XNT88nTt0SoV$1jTP5O9TgEhgxdysWvlW6T8oxpwJBWmTcUpTne4BWDg=",
+            "role": "patient",
+            "email": "martinsilver@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 25,
+        "fields": {
+            "username": "nataliedee",
+            "password": "pbkdf2_sha256$870000$KlAojYajaQX26KBv3qCzoO$stbizyIDy+hODVgG/REf8wCnwO9CcZpT0ngwsHmhOUM=",
+            "role": "patient",
+            "email": "nataliedee@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 26,
+        "fields": {
+            "username": "owengray",
+            "password": "pbkdf2_sha256$870000$aJMqEqMjOGPLxwB6W6dcKR$w/X4rFYWBFsXXOupVWnFtmibFqotd2ucOrrvRmn5S1M=",
+            "role": "patient",
+            "email": "owengray@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 27,
+        "fields": {
+            "username": "paulmcginn",
+            "password": "pbkdf2_sha256$870000$dhBUYoWfShqYmXO5z4yZnV$oG+ARQNPQMEGwpZzgZQwY9HTQMeMclI3RsoYkAFMyxc=",
+            "role": "patient",
+            "email": "paulmcginn@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 28,
+        "fields": {
+            "username": "quincyblue",
+            "password": "pbkdf2_sha256$870000$FGGI8VvxdTGSDO6FvbXfA5$sO8vhqQFaQLntxE8U8KOy+EFSFISC7JjJPPYePhoBw8=",
+            "role": "patient",
+            "email": "quincyblue@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 29,
+        "fields": {
+            "username": "rachelfox",
+            "password": "pbkdf2_sha256$870000$bsaZxwgcQsOdgAjzt9oHXi$xYFhmC9KF6FBIlNOeBkpsPug+xD/94HTbz4QMHAtQ5E=",
+            "role": "patient",
+            "email": "rachelfox@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 30,
+        "fields": {
+            "username": "samuelgreen",
+            "password": "pbkdf2_sha256$870000$cF7gMW3KzUDI21t8TKJzpo$0EF8q0MX1Ih8PCnGGB6Te4A06c7icBZMYMuuuQLkApE=",
+            "role": "patient",
+            "email": "samuelgreen@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 31,
+        "fields": {
+            "username": "tessawhite",
+            "password": "pbkdf2_sha256$870000$nWti21L9jc4VbKov8ygUtD$CKVUe+Z2tPrIuTzRqx3K4mkWO1YVP3n9dFwR4kIvv+8=",
+            "role": "patient",
+            "email": "tessawhite@healthcareims.com"
+        }
+    },
+    {
+        "model": "api.medicalstaff",
+        "pk": 1,
+        "fields": {
+            "user": 2,
+            "name": "John Doe",
+            "role": "doctor",
+            "contact_info": "Contact info for John Doe",
+            "employee_status": "active"
+        }
+    },
+    {
+        "model": "api.medicalstaff",
+        "pk": 2,
+        "fields": {
+            "user": 3,
+            "name": "Jane Smith",
+            "role": "radiologist",
+            "contact_info": "Contact info for Jane Smith",
+            "employee_status": "active"
+        }
+    },
+    {
+        "model": "api.medicalstaff",
+        "pk": 3,
+        "fields": {
+            "user": 4,
+            "name": "Sarah Lee",
+            "role": "doctor",
+            "contact_info": "Contact info for Sarah Lee",
+            "employee_status": "active"
+        }
+    },
+    {
+        "model": "api.medicalstaff",
+        "pk": 4,
+        "fields": {
+            "user": 5,
+            "name": "Michael Johnson",
+            "role": "radiologist",
+            "contact_info": "Contact info for Michael Johnson",
+            "employee_status": "active"
+        }
+    },
+    {
+        "model": "api.medicalstaff",
+        "pk": 5,
+        "fields": {
+            "user": 6,
+            "name": "Emily Davis",
+            "role": "doctor",
+            "contact_info": "Contact info for Emily Davis",
+            "employee_status": "active"
+        }
+    },
+    {
+        "model": "api.medicalstaff",
+        "pk": 6,
+        "fields": {
+            "user": 7,
+            "name": "David White",
+            "role": "doctor",
+            "contact_info": "Contact info for David White",
+            "employee_status": "active"
+        }
+    },
+    {
+        "model": "api.medicalstaff",
+        "pk": 7,
+        "fields": {
+            "user": 8,
+            "name": "Laura Clark",
+            "role": "doctor",
+            "contact_info": "Contact info for Laura Clark",
+            "employee_status": "active"
+        }
+    },
+    {
+        "model": "api.medicalstaff",
+        "pk": 8,
+        "fields": {
+            "user": 9,
+            "name": "William Harris",
+            "role": "radiologist",
+            "contact_info": "Contact info for William Harris",
+            "employee_status": "active"
+        }
+    },
+    {
+        "model": "api.medicalstaff",
+        "pk": 9,
+        "fields": {
+            "user": 10,
+            "name": "Olivia Martin",
+            "role": "radiologist",
+            "contact_info": "Contact info for Olivia Martin",
+            "employee_status": "active"
+        }
+    },
+    {
+        "model": "api.medicalstaff",
+        "pk": 10,
+        "fields": {
+            "user": 11,
+            "name": "James Taylor",
+            "role": "radiologist",
+            "contact_info": "Contact info for James Taylor",
+            "employee_status": "active"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 1,
+        "fields": {
+            "user": 12,
+            "name": "Alice Brown",
+            "address": "123 Main Street, Springfield",
+            "date_of_birth": "1985-05-15",
+            "diagnosis": "Hypertension",
+            "diagnosis_date": "2022-03-10",
+            "conditions": "High Blood Pressure",
+            "cost": "250.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 2,
+        "fields": {
+            "user": 13,
+            "name": "Bob White",
+            "address": "456 Elm Street, Shelbyville",
+            "date_of_birth": "1978-11-22",
+            "diagnosis": "Diabetes Type 2",
+            "diagnosis_date": "2020-08-15",
+            "conditions": "Insulin Dependent",
+            "cost": "300.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 3,
+        "fields": {
+            "user": 14,
+            "name": "Charlie Black",
+            "address": "789 Pine Road, Capital City",
+            "date_of_birth": "1990-09-10",
+            "diagnosis": "Asthma",
+            "diagnosis_date": "2018-01-25",
+            "conditions": "Chronic Respiratory Issues",
+            "cost": "200.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 4,
+        "fields": {
+            "user": 15,
+            "name": "Diana Green",
+            "address": "321 Cedar Avenue, Ogdenville",
+            "date_of_birth": "1982-02-12",
+            "diagnosis": "Anemia",
+            "diagnosis_date": "2015-05-30",
+            "conditions": "Iron Deficiency",
+            "cost": "180.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 5,
+        "fields": {
+            "user": 16,
+            "name": "Eva Blue",
+            "address": "654 Willow Street, North Haverbrook",
+            "date_of_birth": "1995-07-20",
+            "diagnosis": "Migraine",
+            "diagnosis_date": "2019-10-10",
+            "conditions": "Chronic Headaches",
+            "cost": "220.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 6,
+        "fields": {
+            "user": 17,
+            "name": "Frank Red",
+            "address": "987 Oak Lane, Brockway",
+            "date_of_birth": "1972-03-05",
+            "diagnosis": "Arthritis",
+            "diagnosis_date": "2010-07-12",
+            "conditions": "Joint Pain",
+            "cost": "270.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 7,
+        "fields": {
+            "user": 18,
+            "name": "Grace Yellow",
+            "address": "111 Maple Drive, Springfield",
+            "date_of_birth": "1988-08-30",
+            "diagnosis": "Anxiety",
+            "diagnosis_date": "2021-05-05",
+            "conditions": "Generalized Anxiety Disorder",
+            "cost": "150.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 8,
+        "fields": {
+            "user": 19,
+            "name": "Henry Purple",
+            "address": "222 Birch Road, Shelbyville",
+            "date_of_birth": "1981-12-25",
+            "diagnosis": "Hypertension",
+            "diagnosis_date": "2018-02-18",
+            "conditions": "High Blood Pressure",
+            "cost": "260.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 9,
+        "fields": {
+            "user": 20,
+            "name": "Isla Pink",
+            "address": "333 Cherry Lane, Ogdenville",
+            "date_of_birth": "1992-01-14",
+            "diagnosis": "Diabetes Type 1",
+            "diagnosis_date": "2015-12-11",
+            "conditions": "Insulin Dependent",
+            "cost": "400.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 10,
+        "fields": {
+            "user": 21,
+            "name": "Jack Grey",
+            "address": "444 Aspen Way, Capital City",
+            "date_of_birth": "1984-06-19",
+            "diagnosis": "Sleep Apnea",
+            "diagnosis_date": "2020-11-02",
+            "conditions": "Obstructive Sleep Apnea",
+            "cost": "350.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 11,
+        "fields": {
+            "user": 22,
+            "name": "Karen Black",
+            "address": "555 Sycamore Street, Springfield",
+            "date_of_birth": "1975-09-09",
+            "diagnosis": "Thyroid Disorder",
+            "diagnosis_date": "2017-04-14",
+            "conditions": "Hypothyroidism",
+            "cost": "330.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 12,
+        "fields": {
+            "user": 23,
+            "name": "Louise Clear",
+            "address": "666 Beech Avenue, Shelbyville",
+            "date_of_birth": "1997-12-31",
+            "diagnosis": "Chronic Back Pain",
+            "diagnosis_date": "2023-06-21",
+            "conditions": "Spinal Issues",
+            "cost": "310.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 13,
+        "fields": {
+            "user": 24,
+            "name": "Martin Silver",
+            "address": "777 Laurel Lane, Ogdenville",
+            "date_of_birth": "1986-03-01",
+            "diagnosis": "Depression",
+            "diagnosis_date": "2016-08-25",
+            "conditions": "Clinical Depression",
+            "cost": "290.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 14,
+        "fields": {
+            "user": 25,
+            "name": "Natalie Dee",
+            "address": "888 Chestnut Drive, North Haverbrook",
+            "date_of_birth": "1989-04-22",
+            "diagnosis": "Epilepsy",
+            "diagnosis_date": "2014-10-30",
+            "conditions": "Seizure Disorder",
+            "cost": "320.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 15,
+        "fields": {
+            "user": 26,
+            "name": "Owen Gray",
+            "address": "999 Poplar Court, Brockway",
+            "date_of_birth": "1979-07-16",
+            "diagnosis": "Heart Disease",
+            "diagnosis_date": "2011-02-19",
+            "conditions": "Coronary Artery Disease",
+            "cost": "500.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 16,
+        "fields": {
+            "user": 27,
+            "name": "Paul McGinn",
+            "address": "123 Elmwood Road, Springfield",
+            "date_of_birth": "1993-02-05",
+            "diagnosis": "Anxiety",
+            "diagnosis_date": "2023-05-12",
+            "conditions": "Panic Disorder",
+            "cost": "180.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 17,
+        "fields": {
+            "user": 28,
+            "name": "Quincy Blue",
+            "address": "234 Walnut Street, Shelbyville",
+            "date_of_birth": "1983-11-03",
+            "diagnosis": "Migraines",
+            "diagnosis_date": "2019-09-09",
+            "conditions": "Cluster Headaches",
+            "cost": "210.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 18,
+        "fields": {
+            "user": 29,
+            "name": "Rachel Fox",
+            "address": "345 Willow Street, Capital City",
+            "date_of_birth": "1991-05-27",
+            "diagnosis": "Asthma",
+            "diagnosis_date": "2010-12-15",
+            "conditions": "Severe Respiratory Issues",
+            "cost": "250.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 19,
+        "fields": {
+            "user": 30,
+            "name": "Samuel Green",
+            "address": "456 Birch Avenue, Ogdenville",
+            "date_of_birth": "1987-08-10",
+            "diagnosis": "Arthritis",
+            "diagnosis_date": "2015-06-22",
+            "conditions": "Osteoarthritis",
+            "cost": "270.00"
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 20,
+        "fields": {
+            "user": 31,
+            "name": "Tessa White",
+            "address": "567 Pine Road, Brockway",
+            "date_of_birth": "1980-04-12",
+            "diagnosis": "Diabetes Type 2",
+            "diagnosis_date": "2008-03-03",
+            "conditions": "Diet-Controlled",
+            "cost": "290.00"
+        }
+    },
+    {
+        "model": "api.image",
+        "pk": 1,
+        "fields": {
+            "type": "X-ray",
+            "timestamp": "2025-01-22T10:00:00",
+            "classification": "Normal",
+            "patient": 1
+        }
+    },
+    {
+        "model": "api.image",
+        "pk": 2,
+        "fields": {
+            "type": "MRI",
+            "timestamp": "2025-01-22T11:00:00",
+            "classification": "Abnormal",
+            "patient": 2
+        }
+    },
+    {
+        "model": "api.image",
+        "pk": 3,
+        "fields": {
+            "type": "X-ray",
+            "timestamp": "2025-01-22T12:00:00",
+            "classification": "Normal",
+            "patient": 3
+        }
+    },
+    {
+        "model": "api.image",
+        "pk": 4,
+        "fields": {
+            "type": "Ultrasound",
+            "timestamp": "2025-01-22T13:00:00",
+            "classification": "Normal",
+            "patient": 4
+        }
+    },
+    {
+        "model": "api.image",
+        "pk": 5,
+        "fields": {
+            "type": "CT Scan",
+            "timestamp": "2025-01-22T14:00:00",
+            "classification": "Abnormal",
+            "patient": 5
+        }
+    },
+    {
+        "model": "api.image",
+        "pk": 6,
+        "fields": {
+            "type": "MRI",
+            "timestamp": "2025-01-22T15:00:00",
+            "classification": "Normal",
+            "patient": 6
+        }
+    },
+    {
+        "model": "api.image",
+        "pk": 7,
+        "fields": {
+            "type": "X-ray",
+            "timestamp": "2025-01-22T16:00:00",
+            "classification": "Abnormal",
+            "patient": 7
+        }
+    },
+    {
+        "model": "api.image",
+        "pk": 8,
+        "fields": {
+            "type": "Ultrasound",
+            "timestamp": "2025-01-22T17:00:00",
+            "classification": "Normal",
+            "patient": 8
+        }
+    },
+    {
+        "model": "api.image",
+        "pk": 9,
+        "fields": {
+            "type": "CT Scan",
+            "timestamp": "2025-01-22T18:00:00",
+            "classification": "Normal",
+            "patient": 9
+        }
+    },
+    {
+        "model": "api.image",
+        "pk": 10,
+        "fields": {
+            "type": "X-ray",
+            "timestamp": "2025-01-22T19:00:00",
+            "classification": "Abnormal",
+            "patient": 10
+        }
+    },
+    {
+        "model": "api.invoice",
+        "pk": 1,
+        "fields": {
+            "total_amount": 500.0,
+            "date_issued": "2025-01-22",
+            "patient": 1
+        }
+    },
+    {
+        "model": "api.invoice",
+        "pk": 2,
+        "fields": {
+            "total_amount": 300.0,
+            "date_issued": "2025-01-22",
+            "patient": 2
+        }
+    },
+    {
+        "model": "api.invoice",
+        "pk": 3,
+        "fields": {
+            "total_amount": 700.0,
+            "date_issued": "2025-01-22",
+            "patient": 3
+        }
+    },
+    {
+        "model": "api.invoice",
+        "pk": 4,
+        "fields": {
+            "total_amount": 600.0,
+            "date_issued": "2025-01-22",
+            "patient": 4
+        }
+    },
+    {
+        "model": "api.invoice",
+        "pk": 5,
+        "fields": {
+            "total_amount": 450.0,
+            "date_issued": "2025-01-22",
+            "patient": 5
+        }
+    },
+    {
+        "model": "api.invoice",
+        "pk": 6,
+        "fields": {
+            "total_amount": 550.0,
+            "date_issued": "2025-01-22",
+            "patient": 6
+        }
+    },
+    {
+        "model": "api.invoice",
+        "pk": 7,
+        "fields": {
+            "total_amount": 650.0,
+            "date_issued": "2025-01-22",
+            "patient": 7
+        }
+    },
+    {
+        "model": "api.invoice",
+        "pk": 8,
+        "fields": {
+            "total_amount": 400.0,
+            "date_issued": "2025-01-22",
+            "patient": 8
+        }
+    },
+    {
+        "model": "api.invoice",
+        "pk": 9,
+        "fields": {
+            "total_amount": 750.0,
+            "date_issued": "2025-01-22",
+            "patient": 9
+        }
+    },
+    {
+        "model": "api.invoice",
+        "pk": 10,
+        "fields": {
+            "total_amount": 800.0,
+            "date_issued": "2025-01-22",
+            "patient": 10
+        }
+    },
+    {
+        "model": "api.diagnosticreport",
+        "pk": 1,
+        "fields": {
+            "report_date": "2025-01-22",
+            "diagnosis": "Normal X-ray report",
+            "medical_staff": 1,
+            "patient": 1,
+            "images": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "api.diagnosticreport",
+        "pk": 2,
+        "fields": {
+            "report_date": "2025-01-22",
+            "diagnosis": "MRI report showing abnormalities",
+            "medical_staff": 2,
+            "patient": 2,
+            "images": [
+                2
+            ]
+        }
+    },
+    {
+        "model": "api.diagnosticreport",
+        "pk": 3,
+        "fields": {
+            "report_date": "2025-01-22",
+            "diagnosis": "Normal X-ray report",
+            "medical_staff": 3,
+            "patient": 3,
+            "images": [
+                3
+            ]
+        }
+    },
+    {
+        "model": "api.diagnosticreport",
+        "pk": 4,
+        "fields": {
+            "report_date": "2025-01-22",
+            "diagnosis": "Ultrasound report showing normal results",
+            "medical_staff": 4,
+            "patient": 4,
+            "images": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "api.diagnosticreport",
+        "pk": 5,
+        "fields": {
+            "report_date": "2025-01-22",
+            "diagnosis": "CT Scan report with abnormalities",
+            "medical_staff": 5,
+            "patient": 5,
+            "images": [
+                5
+            ]
+        }
+    },
+    {
+        "model": "api.diagnosticreport",
+        "pk": 6,
+        "fields": {
+            "report_date": "2025-01-22",
+            "diagnosis": "MRI report showing normal results",
+            "medical_staff": 6,
+            "patient": 6,
+            "images": [
+                6
+            ]
+        }
+    },
+    {
+        "model": "api.diagnosticreport",
+        "pk": 7,
+        "fields": {
+            "report_date": "2025-01-22",
+            "diagnosis": "X-ray report showing abnormalities",
+            "medical_staff": 7,
+            "patient": 7,
+            "images": [
+                7
+            ]
+        }
+    },
+    {
+        "model": "api.diagnosticreport",
+        "pk": 8,
+        "fields": {
+            "report_date": "2025-01-22",
+            "diagnosis": "Ultrasound report showing normal results",
+            "medical_staff": 8,
+            "patient": 8,
+            "images": [
+                8
+            ]
+        }
+    },
+    {
+        "model": "api.diagnosticreport",
+        "pk": 9,
+        "fields": {
+            "report_date": "2025-01-22",
+            "diagnosis": "CT Scan report with normal results",
+            "medical_staff": 9,
+            "patient": 9,
+            "images": [
+                9
+            ]
+        }
+    },
+    {
+        "model": "api.diagnosticreport",
+        "pk": 10,
+        "fields": {
+            "report_date": "2025-01-22",
+            "diagnosis": "X-ray report showing abnormalities",
+            "medical_staff": 10,
+            "patient": 10,
+            "images": [
+                10
+            ]
+        }
+    },
+    {
+        "model": "api.payment",
+        "pk": 1,
+        "fields": {
+            "amount": 500.0,
+            "payment_date": "2025-01-22",
+            "payment_method": "card",
+            "invoice": 1
+        }
+    },
+    {
+        "model": "api.payment",
+        "pk": 2,
+        "fields": {
+            "amount": 300.0,
+            "payment_date": "2025-01-22",
+            "payment_method": "cash",
+            "invoice": 2
+        }
+    },
+    {
+        "model": "api.payment",
+        "pk": 3,
+        "fields": {
+            "amount": 700.0,
+            "payment_date": "2025-01-22",
+            "payment_method": "card",
+            "invoice": 3
+        }
+    },
+    {
+        "model": "api.payment",
+        "pk": 4,
+        "fields": {
+            "amount": 600.0,
+            "payment_date": "2025-01-22",
+            "payment_method": "cash",
+            "invoice": 4
+        }
+    },
+    {
+        "model": "api.payment",
+        "pk": 5,
+        "fields": {
+            "amount": 450.0,
+            "payment_date": "2025-01-22",
+            "payment_method": "card",
+            "invoice": 5
+        }
+    },
+    {
+        "model": "api.payment",
+        "pk": 6,
+        "fields": {
+            "amount": 550.0,
+            "payment_date": "2025-01-22",
+            "payment_method": "cash",
+            "invoice": 6
+        }
+    },
+    {
+        "model": "api.payment",
+        "pk": 7,
+        "fields": {
+            "amount": 650.0,
+            "payment_date": "2025-01-22",
+            "payment_method": "card",
+            "invoice": 7
+        }
+    },
+    {
+        "model": "api.payment",
+        "pk": 8,
+        "fields": {
+            "amount": 400.0,
+            "payment_date": "2025-01-22",
+            "payment_method": "cash",
+            "invoice": 8
+        }
+    },
+    {
+        "model": "api.payment",
+        "pk": 9,
+        "fields": {
+            "amount": 750.0,
+            "payment_date": "2025-01-22",
+            "payment_method": "card",
+            "invoice": 9
+        }
+    },
+    {
+        "model": "api.payment",
+        "pk": 10,
+        "fields": {
+            "amount": 800.0,
+            "payment_date": "2025-01-22",
+            "payment_method": "cash",
+            "invoice": 10
+        }
+    }
+]

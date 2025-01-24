@@ -7,9 +7,28 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ['username', 'email', 'role', 'password']
         extra_kwargs = {'password': {'write_only': True}}
 
+    def validate_username(self, value):
+        user_id = self.instance.id if self.instance else None
+        if User.objects.filter(username=value).exclude(id=user_id).exists():
+            raise serializers.ValidationError("A user with that username already exists.")
+        return value
+
+    def validate_email(self, value):
+        user_id = self.instance.id if self.instance else None
+        if User.objects.filter(email=value).exclude(id=user_id).exists():
+            raise serializers.ValidationError("A user with that email already exists.")
+        return value
+
     def create(self, validated_data):
         user = User.objects.create_user(**validated_data)
         return user
+    
+    def update(self, instance, validated_data):
+        if 'password' in validated_data:
+            password = validated_data.pop('password')
+            instance.set_password(password)
+        
+        return super().update(instance, validated_data)
 
 class MedicalStaffSerializer(serializers.ModelSerializer):
     user = UserSerializer()
@@ -25,6 +44,18 @@ class MedicalStaffSerializer(serializers.ModelSerializer):
         user = user_serializer.save()
         medical_staff = MedicalStaff.objects.create(user=user, **validated_data)
         return medical_staff
+    
+    def update(self, instance, validated_data):
+        user_data = validated_data.pop('user', None)
+        if user_data:
+            user_serializer = UserSerializer(instance.user, data=user_data, partial=True)
+            user_serializer.is_valid(raise_exception=True)
+            user_serializer.save()
+
+        for attr, value in validated_data.items():
+            setattr(instance, attr, value)
+        instance.save()
+        return instance
 
 class PatientSerializer(serializers.ModelSerializer):
     user = UserSerializer()
@@ -40,6 +71,18 @@ class PatientSerializer(serializers.ModelSerializer):
         user = user_serializer.save()
         patient = Patient.objects.create(user=user, **validated_data)
         return patient
+
+    def update(self, instance, validated_data):
+        user_data = validated_data.pop('user', None)
+        if user_data:
+            user_serializer = UserSerializer(instance.user, data=user_data, partial=True)
+            user_serializer.is_valid(raise_exception=True)
+            user_serializer.save()
+
+        for attr, value in validated_data.items():
+            setattr(instance, attr, value)
+        instance.save()
+        return instance
     
 class ImageSerializer(serializers.ModelSerializer):
     class Meta:

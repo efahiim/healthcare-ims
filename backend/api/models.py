@@ -45,7 +45,7 @@ class Patient(models.Model):
     address = models.TextField()
     date_of_birth = models.DateField()
     diagnosis = models.TextField(blank=True, null=True)
-    diagnosis_date = models.DateField()
+    diagnosis_date = models.DateField(blank=True, null=True)
     conditions = models.TextField(blank=True, null=True)
     cost = models.DecimalField(max_digits=10, decimal_places=2)
     

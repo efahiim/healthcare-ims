@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    background-color: #f9f9f9;
+    color: black;
+    line-height: 1.4;
+}
+
+button, input, select, textarea {
+    font-family: monospace;
+}
+
+input, select, textarea {
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    color: black;
+    outline: none;
+}
