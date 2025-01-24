@@ -3,9 +3,8 @@ import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import {
     fetchPatients,
-    fetchInvoices,
+    deletePatient,
 } from "../api";
-import "../styles/Dashboard.css";
 import Page from "../components/Page";
 import styled from 'styled-components';
 
@@ -16,10 +15,16 @@ const Dashboard = styled.div`
     padding: 2rem;
 `;
 
+const HeadingButton = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+`;
+
 const Card = styled.div`
     background: white;
     padding: 1.5rem;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     border-radius: 8px;
     width: 100%;
 
@@ -62,11 +67,55 @@ const Card = styled.div`
     }
 `;
 
+const Buttons = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    button.add {
+        background-color: aquamarine;
+        border: 0;
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 10px 15px;
+        color: black;
+    }
+
+    button.crud {
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        color: black;
+        text-decoration: underline;
+
+        &.delete {
+            color: red;
+        }
+
+        &.other {
+            color: teal;
+        }
+    }
+`;
+
+const ListItem = styled.li`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 7px;
+    border-radius: 4px;
+    transition: all .25s ease-in-out;
+
+    &:hover {
+        background-color: aquamarine;
+    }
+`;
+
 const MedicalStaff = () => {
     const { user, token } = useAuth();
     const navigate = useNavigate();
     const [patients, setPatients] = useState([]);
-    const [invoices, setInvoices] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -76,13 +125,11 @@ const MedicalStaff = () => {
 
         const fetchData = async () => {
             try {
-                const [patientResponse, invoiceResponse] = await Promise.all([
+                const [patientResponse] = await Promise.all([
                     fetchPatients(token),
-                    fetchInvoices(token),
                 ]);
 
                 setPatients(patientResponse);
-                setInvoices(invoiceResponse);
             } catch (error) {
                 console.error("Error fetching data:", error);
             } finally {
@@ -108,30 +155,44 @@ const MedicalStaff = () => {
         navigate("/add-patient");
     };
 
+    const handleDeletePatient = async (id) => {
+        if (window.confirm("Are you sure you want to delete this patient?")) {
+            try {
+                await deletePatient(id, token);
+                setPatients((prev) => prev.filter((patient) => patient.patient_id !== id));
+                alert("Patient deleted successfully!");
+            } catch (error) {
+                console.error("Error deleting patient:", error);
+            }
+        }
+    };
+
     return (
         <Page>
             <Dashboard>
                     <Card>
-                        <h3>Patients ({patients?.length})</h3>
+                        <HeadingButton>
+                            <h3>Patients ({patients?.length})</h3>
+                            <button onClick={handleAddPatient}>
+                                Add Patient
+                            </button>
+                        </HeadingButton>
                         <ul>
                             {patients?.map((patient, index) => (
-                                <li key={patient.id}>
-                                    {index + 1}. <span className="name">{patient.name}</span> - {patient.address} - {patient.conditions}
-                                </li>
-                            ))}
-                        </ul>
-                        <button onClick={handleAddPatient}>
-                            Add Patient
-                        </button>
-                    </Card>
-
-                    <Card>
-                        <h3>Invoices ({invoices?.length} - £{invoices?.reduce((sum, invoice) => sum + invoice.total_amount, 0)})</h3>
-                        <ul>
-                            {invoices?.map((invoice) => (
-                                <li key={invoice.id}>
-                                    {invoice.date_issued} - £{invoice.total_amount}
-                                </li>
+                                <ListItem key={patient.patient_id}>
+                                    <div>
+                                        {index + 1}. <span className="name">{patient.name}</span> - {patient.address} - {patient.conditions}
+                                    </div>
+                                    <Buttons>
+                                        <button onClick={() => navigate(`/patients/${patient.patient_id}/reports`)} className="crud other">View Reports</button>
+                                        <button onClick={() => navigate(`/patients/${patient.patient_id}/add-report`)} className="crud other">Add Report</button>
+                                        <button onClick={() => navigate(`/patients/${patient.patient_id}/images`)} className="crud other">View Images</button>
+                                        <button onClick={() => navigate(`/invoices/${patient.patient_id}`)} className="crud other">View Invoices</button>
+                                        <button onClick={() => navigate(`/invoices/${patient.patient_id}/create`)} className="crud other">Create Invoice</button>
+                                        <button onClick={() => navigate(`/update-patient/${patient.patient_id}`)} className="crud">Edit</button>
+                                        <button onClick={() => handleDeletePatient(patient.patient_id)} className="crud delete">Delete</button>
+                                    </Buttons>
+                                </ListItem>
                             ))}
                         </ul>
                     </Card>

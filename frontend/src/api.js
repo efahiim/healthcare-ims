@@ -35,33 +35,40 @@ export const fetchImagesByPatient = async (patientId, token) => {
     return response.data;
 };
 
-export const createImage = async (imageData) => {
-    const response = await api.post("api/images/", imageData);
+export const createImage = async (imageData, token) => {
+    const response = await api.post("api/images/", imageData, {
+        headers: {
+            Authorization: `Token ${token}`,
+            "Content-Type": "multipart/form-data",
+        },
+    });
     return response.data;
 };
 
-export const fetchInvoiceByPatient = async (patientId) => {
-    const response = await api.get(`api/invoices/${patientId}/`);
+export const createReport = async (reportData, token) => {
+    const response = await api.post("api/reports/", reportData, {
+        headers: {
+            Authorization: `Token ${token}`,
+        },
+    });
     return response.data;
 };
 
-export const fetchReportsByPatient = async (patientId) => {
-    const response = await api.get(`api/reports/${patientId}/`);
+export const fetchReportsByPatient = async (patientId, token) => {
+    const response = await api.get(`api/reports/${patientId}/`, {
+        headers: {
+            Authorization: `Token ${token}`,
+        },
+    });
     return response.data;
 };
 
-export const createReport = async (reportData) => {
-    const response = await api.post("api/reports/", reportData);
-    return response.data;
-};
-
-export const fetchPaymentsByInvoice = async (invoiceId) => {
-    const response = await api.get(`api/payments/${invoiceId}/`);
-    return response.data;
-};
-
-export const createPayment = async (paymentData) => {
-    const response = await api.post("api/payments/", paymentData);
+export const fetchPaymentByInvoice = async (invoiceId, token) => {
+    const response = await api.get(`api/payment/${invoiceId}/`, {
+        headers: {
+            Authorization: `Token ${token}`,
+        },
+    });
     return response.data;
 };
 
@@ -76,6 +83,24 @@ export const fetchUsers = async (token) => {
 
 export const fetchInvoices = async (token) => {
     const response = await api.get("api/invoices/", {
+        headers: {
+            Authorization: `Token ${token}`,
+        },
+    });
+    return response.data;
+};
+
+export const fetchInvoicesByPatient = async (id, token) => {
+    const response = await api.get(`api/invoices/${id}`, {
+        headers: {
+            Authorization: `Token ${token}`,
+        },
+    });
+    return response.data;
+};
+
+export const createInvoice = async (invoiceData, token) => {
+    const response = await api.post(`api/invoices/${invoiceData.patient}/`, invoiceData, {
         headers: {
             Authorization: `Token ${token}`,
         },

@@ -6,7 +6,7 @@ from rest_framework.views import APIView
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import IsAuthenticated, AllowAny
-from .permissions import IsAdmin, IsMedicalStaff
+from .permissions import IsAdmin, IsMedicalStaff, IsPatient
 from .models import Image, Invoice, DiagnosticReport, Payment, User, MedicalStaff, Patient
 from .serializers import ImageSerializer, InvoiceSerializer, DiagnosticReportSerializer, PaymentSerializer
 
@@ -59,6 +59,7 @@ class UserLoginView(ObtainAuthToken):
             
             response_data = {
                 'token': token.key,
+                'id': user.id,
                 'username': user.username,
                 'role': user.role,
             }
@@ -97,8 +98,8 @@ class UserLogoutView(APIView):
             # Handle case where token does not exist
             return Response({'message': 'Token does not exist or is already invalidated'}, status=status.HTTP_400_BAD_REQUEST)
 
-class ImageListCreateView(APIView):
-    permission_classes = [IsAuthenticated]
+class ImageUploadView(APIView):
+    permission_classes = [IsAdmin | IsMedicalStaff | IsPatient]
 
     def get(self, request):
         patient_id = request.query_params.get('patient_id', None)
@@ -118,24 +119,28 @@ class ImageListCreateView(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class InvoiceDetailView(APIView):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAdmin | IsMedicalStaff | IsPatient]
 
     def get(self, request, patient_id):
-        try:
-            invoice = Invoice.objects.get(patient_id=patient_id)
-            serializer = InvoiceSerializer(invoice)
+        invoices = Invoice.objects.filter(patient_id=patient_id)
+        if invoices.exists():
+            serializer = InvoiceSerializer(invoices, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
-        except Invoice.DoesNotExist:
-            return Response({'error': 'Invoice not found'}, status=status.HTTP_404_NOT_FOUND)
+        return Response({'error': 'No invoices found for this patient'}, status=status.HTTP_404_NOT_FOUND)
+
+    def post(self, request, patient_id):
+        data = request.data.copy()
+        data['patient'] = patient_id 
+        
+        serializer = InvoiceSerializer(data=data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class DiagnosticReportView(APIView):
-    permission_classes = [IsAuthenticated]
-
-    def get(self, request, patient_id):
-        reports = DiagnosticReport.objects.filter(patient_id=patient_id)
-        serializer = DiagnosticReportSerializer(reports, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
-
+    permission_classes = [AllowAny]
+    
     def post(self, request):
         serializer = DiagnosticReportSerializer(data=request.data)
         if serializer.is_valid():
@@ -143,20 +148,21 @@ class DiagnosticReportView(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-class PaymentListCreateView(APIView):
-    permission_classes = [IsAuthenticated]
+    def get(self, request, patient_id):
+        reports = DiagnosticReport.objects.filter(patient_id=patient_id)
+        serializer = DiagnosticReportSerializer(reports, many=True)
+        return Response(serializer.data)
+
+class PaymentDetailView(APIView):
+    permission_classes = [IsAdmin | IsMedicalStaff | IsPatient]
 
     def get(self, request, invoice_id):
-        payments = Payment.objects.filter(invoice_id=invoice_id)
-        serializer = PaymentSerializer(payments, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
-
-    def post(self, request):
-        serializer = PaymentSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        try:
+            payment = Payment.objects.get(invoice_id=invoice_id)
+            serializer = PaymentSerializer(payment)
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        except Payment.DoesNotExist:
+            return Response({'error': 'Payment not found'}, status=status.HTTP_404_NOT_FOUND)
     
 class UserListView(APIView):
     permission_classes = [IsAdmin]
@@ -167,7 +173,7 @@ class UserListView(APIView):
         return Response(data)
 
 class MedicalStaffListView(APIView):
-    permission_classes = [IsAdmin]
+    permission_classes = [IsAdmin | IsMedicalStaff | IsPatient]
 
     def get(self, request, staff_id=None):
         if staff_id:
@@ -235,7 +241,7 @@ class MedicalStaffListView(APIView):
         return Response({"message": "Medical staff removed successfully."}, status=status.HTTP_204_NO_CONTENT)
 
 class PatientListView(APIView):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAdmin | IsMedicalStaff | IsPatient]
 
     def get(self, request, patient_id=None):
         if patient_id:
@@ -304,7 +310,7 @@ class PatientListView(APIView):
         return Response({"message": "Patient removed successfully."}, status=status.HTTP_204_NO_CONTENT)
 
 class InvoiceListView(APIView):
-    permission_classes = [IsAdmin | IsMedicalStaff]
+    permission_classes = [IsAdmin | IsMedicalStaff | IsPatient]
 
     def get(self, request):
         invoices = Invoice.objects.select_related('patient').all()

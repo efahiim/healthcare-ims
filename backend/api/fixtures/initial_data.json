@@ -706,7 +706,8 @@
             "type": "X-ray",
             "timestamp": "2025-01-22T10:00:00",
             "classification": "Normal",
-            "patient": 1
+            "patient": 1,
+            "file": "images/default.png"
         }
     },
     {
@@ -716,7 +717,8 @@
             "type": "MRI",
             "timestamp": "2025-01-22T11:00:00",
             "classification": "Abnormal",
-            "patient": 2
+            "patient": 2,
+            "file": "images/default.png"
         }
     },
     {
@@ -726,7 +728,8 @@
             "type": "X-ray",
             "timestamp": "2025-01-22T12:00:00",
             "classification": "Normal",
-            "patient": 3
+            "patient": 3,
+            "file": "images/default.png"
         }
     },
     {
@@ -736,7 +739,8 @@
             "type": "Ultrasound",
             "timestamp": "2025-01-22T13:00:00",
             "classification": "Normal",
-            "patient": 4
+            "patient": 4,
+            "file": "images/default.png"
         }
     },
     {
@@ -746,7 +750,8 @@
             "type": "CT Scan",
             "timestamp": "2025-01-22T14:00:00",
             "classification": "Abnormal",
-            "patient": 5
+            "patient": 5,
+            "file": "images/default.png"
         }
     },
     {
@@ -756,7 +761,8 @@
             "type": "MRI",
             "timestamp": "2025-01-22T15:00:00",
             "classification": "Normal",
-            "patient": 6
+            "patient": 6,
+            "file": "images/default.png"
         }
     },
     {
@@ -766,7 +772,8 @@
             "type": "X-ray",
             "timestamp": "2025-01-22T16:00:00",
             "classification": "Abnormal",
-            "patient": 7
+            "patient": 7,
+            "file": "images/default.png"
         }
     },
     {
@@ -776,7 +783,8 @@
             "type": "Ultrasound",
             "timestamp": "2025-01-22T17:00:00",
             "classification": "Normal",
-            "patient": 8
+            "patient": 8,
+            "file": "images/default.png"
         }
     },
     {
@@ -786,7 +794,8 @@
             "type": "CT Scan",
             "timestamp": "2025-01-22T18:00:00",
             "classification": "Normal",
-            "patient": 9
+            "patient": 9,
+            "file": "images/default.png"
         }
     },
     {
@@ -796,7 +805,8 @@
             "type": "X-ray",
             "timestamp": "2025-01-22T19:00:00",
             "classification": "Abnormal",
-            "patient": 10
+            "patient": 10,
+            "file": "images/default.png"
         }
     },
     {

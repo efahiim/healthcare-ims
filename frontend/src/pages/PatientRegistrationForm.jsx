@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { createMedicalStaff } from "../api";
+import { createPatient } from "../api";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
-import Page from "./Page";
+import Page from "../components/Page";
 import styled from 'styled-components';
 
 const Form = styled.form`
@@ -25,37 +25,40 @@ const Form = styled.form`
     }
 `;
 
-const MedicalStaffRegistrationForm = () => {
+const PatientRegistrationForm = () => {
     const { token } = useAuth();
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
         name: "",
-        role: "doctor",
-        contact_info: "",
-        employee_status: "active",
+        address: "",
+        date_of_birth: null,
+        diagnosis: "",
+        diagnosis_date: null,
+        conditions: "",
+        cost: 0.00,
         user: {
             username: "",
             password: "",
             email: "",
-            role: "medicalStaff",
+            role: "patient",
         },
     });
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await createMedicalStaff(formData, token);
+            await createPatient(formData, token);
             navigate("/");
         } catch (error) {
             console.error("Error during registration:", error.response.data);
-            alert("Failed to register medical staff.");
+            alert("Failed to register patient.");
         }
     };
 
     return (
         <Page>
             <Form onSubmit={handleSubmit}>
-                <h3>Medical Staff Registration</h3>
+                <h3>Patient Registration</h3>
                 <input
                     type="text"
                     name="name"
@@ -66,41 +69,73 @@ const MedicalStaffRegistrationForm = () => {
                     placeholder="Name"
                     required
                 />
-                <select
-                    name="role"
-                    value={formData.role}
-                    onChange={(e) =>
-                        setFormData((prev) => ({ ...prev, role: e.target.value }))
-                    }
-                >
-                    <option value="doctor">Doctor</option>
-                    <option value="radiologist">Radiologist</option>
-                </select>
                 <textarea
-                    name="contact_info"
-                    value={formData.contact_info}
+                    name="address"
+                    value={formData.address}
                     onChange={(e) =>
-                        setFormData((prev) => ({
-                            ...prev,
-                            contact_info: e.target.value,
-                        }))
+                        setFormData((prev) => ({ ...prev, address: e.target.value }))
                     }
-                    placeholder="Contact Info"
+                    placeholder="Address"
                     required
                 />
-                <select
-                    name="employee_status"
-                    value={formData.employee_status}
+                <input
+                    type="date"
+                    name="date_of_birth"
+                    value={formData.date_of_birth}
                     onChange={(e) =>
                         setFormData((prev) => ({
                             ...prev,
-                            employee_status: e.target.value,
+                            date_of_birth: e.target.value,
                         }))
                     }
-                >
-                    <option value="active">Active</option>
-                    <option value="retired">Retired</option>
-                </select>
+                    required
+                />
+                <textarea
+                    name="diagnosis"
+                    value={formData.diagnosis}
+                    onChange={(e) =>
+                        setFormData((prev) => ({
+                            ...prev,
+                            diagnosis: e.target.value,
+                        }))
+                    }
+                    placeholder="Diagnosis"
+                />
+                <input
+                    type="date"
+                    name="diagnosis_date"
+                    value={formData.diagnosis_date}
+                    onChange={(e) =>
+                        setFormData((prev) => ({
+                            ...prev,
+                            diagnosis_date: e.target.value,
+                        }))
+                    }
+                />
+                <textarea
+                    name="conditions"
+                    value={formData.conditions}
+                    onChange={(e) =>
+                        setFormData((prev) => ({
+                            ...prev,
+                            conditions: e.target.value,
+                        }))
+                    }
+                    placeholder="Conditions"
+                />
+                <input
+                    type="number"
+                    name="cost"
+                    value={formData.cost}
+                    onChange={(e) =>
+                        setFormData((prev) => ({
+                            ...prev,
+                            cost: parseFloat(e.target.value) || 0.00,
+                        }))
+                    }
+                    placeholder="Cost"
+                    step="0.01"
+                />
                 <input
                     type="text"
                     name="username"
@@ -140,10 +175,10 @@ const MedicalStaffRegistrationForm = () => {
                     placeholder="Email"
                     required
                 />
-                <button type="submit">Register Medical Staff</button>
+                <button type="submit">Register Patient</button>
             </Form>
         </Page>
     );
 };
 
-export default MedicalStaffRegistrationForm;
+export default PatientRegistrationForm;

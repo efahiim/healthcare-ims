@@ -52,6 +52,7 @@ class Patient(models.Model):
 class Image(models.Model):
     image_id = models.AutoField(primary_key=True)
     type = models.CharField(max_length=50)
+    file = models.ImageField(upload_to='images/', default='images/default.png')
     timestamp = models.DateTimeField(auto_now_add=True)
     classification = models.CharField(max_length=100)
     patient = models.ForeignKey(Patient, on_delete=models.CASCADE, related_name='images')
@@ -60,7 +61,7 @@ class Invoice(models.Model):
     invoice_id = models.AutoField(primary_key=True)
     total_amount = models.DecimalField(max_digits=10, decimal_places=2)
     date_issued = models.DateField(auto_now_add=True)
-    patient = models.OneToOneField(Patient, on_delete=models.CASCADE, related_name='invoice')
+    patient = models.ForeignKey(Patient, on_delete=models.CASCADE, related_name='invoices')
 
 class DiagnosticReport(models.Model):
     report_id = models.AutoField(primary_key=True)

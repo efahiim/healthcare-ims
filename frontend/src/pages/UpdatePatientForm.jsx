@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { updatePatient, fetchPatientById } from "../api";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate, useParams } from "react-router-dom";
-import Page from "./Page";
+import Page from "../components/Page";
 import styled from "styled-components";
 
 const Form = styled.form`

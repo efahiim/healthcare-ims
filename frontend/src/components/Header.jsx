@@ -55,7 +55,7 @@ const Header = () => {
         navigate("/login");
     };
 
-    const goToHomepage = () => navigate("/");
+    const goBack = () => navigate(-1);
 
     return (
         <HeaderWrapper>
@@ -64,7 +64,7 @@ const Header = () => {
                 <User>
                     <p>Hello there, <span>{ user.username }</span></p>
                     {location.pathname !== '/' && (
-                        <button onClick={goToHomepage} className='homepage'>
+                        <button onClick={goBack} className='homepage'>
                             Go back
                         </button>
                     )}

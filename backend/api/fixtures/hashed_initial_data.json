@@ -4,7 +4,7 @@
         "pk": 1,
         "fields": {
             "username": "admin",
-            "password": "pbkdf2_sha256$870000$coOyNjcUrsg9c0CA3rU9Js$sfBLa6xY/gX5+HHGOCjdT1NG0NnpUlAC3h25gBmpCQk=",
+            "password": "pbkdf2_sha256$870000$5ZUtrmpTZcvOcLLCiVyv3o$wRNiCe+1Ib3f+Ch0rupDKkHQ0Dmqseq8232NWVgLyS4=",
             "role": "administrator",
             "email": "admin@healthcareims.com"
         }
@@ -14,7 +14,7 @@
         "pk": 2,
         "fields": {
             "username": "johndoe",
-            "password": "pbkdf2_sha256$870000$ERXN1WNCodgX8PmkwHEKYJ$u1So8bpkVm7Dj72I+6wJg5HSBQdWKNrZUNQTfWDminw=",
+            "password": "pbkdf2_sha256$870000$quYmfJgPuwYbjskhfEwUre$gjnkYoBpnOAvNzyNAwuXQpeFBSe5Bgld9A535kb86eA=",
             "role": "medicalStaff",
             "email": "johndoe@healthcareims.com"
         }
@@ -24,7 +24,7 @@
         "pk": 3,
         "fields": {
             "username": "janesmith",
-            "password": "pbkdf2_sha256$870000$9VIJpX8qfgVHLj45KMMwG7$GZzrGvC+6wAUEOTsBpdHnlUH+51s/jAByMdVGkVz9DI=",
+            "password": "pbkdf2_sha256$870000$1ZAbJ6AONoLOpOO0fvlq3z$H8IYTcA3HGk9v5sv4VO9BDyzXNtp6004loRJcYLpDLA=",
             "role": "medicalStaff",
             "email": "janesmith@healthcareims.com"
         }
@@ -34,7 +34,7 @@
         "pk": 4,
         "fields": {
             "username": "sarahlee",
-            "password": "pbkdf2_sha256$870000$7zMbglZiCI5RJJG4j2wOEb$Jz5SwRDVYwqxOC+/l3wzVDlg0Rb33rBnUTIlFdtmVFw=",
+            "password": "pbkdf2_sha256$870000$ykd5nROD1Ua5UxRUMuOblg$gj2seZUS4NLrDiwmDJRbzec+iycNQzr+PVSVbaKOXF0=",
             "role": "medicalStaff",
             "email": "sarahlee@healthcareims.com"
         }
@@ -44,7 +44,7 @@
         "pk": 5,
         "fields": {
             "username": "michaeljohnson",
-            "password": "pbkdf2_sha256$870000$BXcKFcnDJuXKlnCyE5daPG$AE0lrKSf4rJggaZBh1kY2TeAeqqCbAtYx9uNOQftrP8=",
+            "password": "pbkdf2_sha256$870000$kg87PhFi0l26uyfVNnx5TQ$6DJSWdoTfMgZ4D+wCII44UlQ02WUe3XKCD/8zL7Ag6Q=",
             "role": "medicalStaff",
             "email": "michaeljohnson@healthcareims.com"
         }
@@ -54,7 +54,7 @@
         "pk": 6,
         "fields": {
             "username": "emilydavis",
-            "password": "pbkdf2_sha256$870000$Nn8rkUzZ9olKeblNqBsNaz$LhZzm3wepeMrIJd20UP7UtXZZDwU0JqMWyFSC8F+cbo=",
+            "password": "pbkdf2_sha256$870000$Qk8h0ihkNdrcKC2ekW8fOi$Pj2URU0YcbuWASWWQLcQPsru7YY3652KUikb5R6+qU0=",
             "role": "medicalStaff",
             "email": "emilydavis@healthcareims.com"
         }
@@ -64,7 +64,7 @@
         "pk": 7,
         "fields": {
             "username": "davidwhite",
-            "password": "pbkdf2_sha256$870000$0sj00FVXe6qfQq4eQaABQg$vT59RPtOA5s6qi0ajC73C/ZUmY3sJCK9OpGaeuaGFEI=",
+            "password": "pbkdf2_sha256$870000$r9uPkhIIdeyl8q57TIv1NK$roqjE4uomk9M8HEWAfDzZ/OlDYvTpeGmO44MgYtTuRw=",
             "role": "medicalStaff",
             "email": "davidwhite@healthcareims.com"
         }
@@ -74,7 +74,7 @@
         "pk": 8,
         "fields": {
             "username": "lauraclark",
-            "password": "pbkdf2_sha256$870000$gNTYhxBqV4RlaCCigrn3jt$sddP35aF1emx+9ye6/OumaTvVheyYE/cEbw84Cxmf6s=",
+            "password": "pbkdf2_sha256$870000$KMkkYqTfDSTS0B3YqaMi4h$hFYOufvkSSHlYGOHXyPBEFEanz7mV4FIO+0QC8GL0m0=",
             "role": "medicalStaff",
             "email": "lauraclark@healthcareims.com"
         }
@@ -84,7 +84,7 @@
         "pk": 9,
         "fields": {
             "username": "williamharris",
-            "password": "pbkdf2_sha256$870000$rNhBnCRWTAQPnZ187aR0WK$69fkF8SLbDxe/i560ZcvyAoc2MhB3MJpxcZ+sLO635c=",
+            "password": "pbkdf2_sha256$870000$TKHrgSBmyyMi7MhZZigqLO$mFL8+dZhEUSdHqUDU8XbF2pAG2QPwyVtpI/ITzqrly0=",
             "role": "medicalStaff",
             "email": "williamharris@healthcareims.com"
         }
@@ -94,7 +94,7 @@
         "pk": 10,
         "fields": {
             "username": "oliviamartin",
-            "password": "pbkdf2_sha256$870000$OAnKMlZFS5wZO8XTvzQN0S$wKj7HwWjI+4GRCSlSlRzFKmXV8QPXh/9fxS8pLYLFT4=",
+            "password": "pbkdf2_sha256$870000$YrgyNAzTxRZZrLwrH5Vcyq$mvsTW5pFxON5w+iCnTK/amFMZlLhM6SslTrv7pktGpA=",
             "role": "medicalStaff",
             "email": "oliviamartin@healthcareims.com"
         }
@@ -104,7 +104,7 @@
         "pk": 11,
         "fields": {
             "username": "jamestaylor",
-            "password": "pbkdf2_sha256$870000$INQ4Es65Nx3JPCsA7WXaVw$TpYFP3YOd5h1wI/uZD4T/frZ7ihP7KnvpFhTvI5Hp1E=",
+            "password": "pbkdf2_sha256$870000$vsRAigyCYpnsG7t0X2YznQ$uaZxI9UN4ujnSpRwZ5oL+wedb2c7VaL7riVpjg2gHQo=",
             "role": "medicalStaff",
             "email": "jamestaylor@healthcareims.com"
         }
@@ -114,7 +114,7 @@
         "pk": 12,
         "fields": {
             "username": "alicebrown",
-            "password": "pbkdf2_sha256$870000$u8iyc45LxO9GkK8WPE6n5j$4YwCQtNYjrua0Gsy0K5D2NduWSqlyT7seFheQi39WcQ=",
+            "password": "pbkdf2_sha256$870000$HlIb7379BWRGHR5YmhZPmV$n08lQiUojJim+k0Ye0x3gXRZCeFxBWgRsbn9RmiKqm4=",
             "role": "patient",
             "email": "alicebrown@healthcareims.com"
         }
@@ -124,7 +124,7 @@
         "pk": 13,
         "fields": {
             "username": "bobwhite",
-            "password": "pbkdf2_sha256$870000$bnfuWSPmgGwZbsJiMcEbmD$w3nBcWgvrCiU+3WeRIsXO9psLVANpTxvzU+/CgpQVXs=",
+            "password": "pbkdf2_sha256$870000$BS1umSe1pLk7K5TMWME3hE$PoV76kjnLKu1NJlcwFYhnNudc6sLxtFJ6tLnPHBYljo=",
             "role": "patient",
             "email": "bobwhite@healthcareims.com"
         }
@@ -134,7 +134,7 @@
         "pk": 14,
         "fields": {
             "username": "charlieblack",
-            "password": "pbkdf2_sha256$870000$rcUwEcQeFTvL6uHhRFWApZ$qrXaBCpCa6APGGbAxB+8twmFOaIcI1nqoexcep03wCM=",
+            "password": "pbkdf2_sha256$870000$vLp5PyCcmBMHNl55N2tanB$pJdHigJ4KsTSPTTFUucD2BdYpDTb92wDvPhLwMAe2NQ=",
             "role": "patient",
             "email": "charlieblack@healthcareims.com"
         }
@@ -144,7 +144,7 @@
         "pk": 15,
         "fields": {
             "username": "dianagreen",
-            "password": "pbkdf2_sha256$870000$TBP4OkC1KXU3e6X7atyRGe$7W3g/oZSaB8hHYs/lylKXhxANszLLFibLqNd0tNjkQs=",
+            "password": "pbkdf2_sha256$870000$H7EWLEf4JLRkNxA6iBwGbN$zLGhAKRuq37pWwqszZIn18e2lBBcUGiR3cWWk/N4zB8=",
             "role": "patient",
             "email": "dianagreen@healthcareims.com"
         }
@@ -154,7 +154,7 @@
         "pk": 16,
         "fields": {
             "username": "evablue",
-            "password": "pbkdf2_sha256$870000$5pds6E67YNP7oDDWf7gwVa$XvOYovizwtXPOffVSzMIhEme5pUGZkfGZ8hJu9w0GfQ=",
+            "password": "pbkdf2_sha256$870000$Y8UFiSksFOftD6TxbX4hLt$4kiXG7PWi49wwSABMEAJx4nlk0oDiRZPLgLEfop2iG8=",
             "role": "patient",
             "email": "evablue@healthcareims.com"
         }
@@ -164,7 +164,7 @@
         "pk": 17,
         "fields": {
             "username": "frankred",
-            "password": "pbkdf2_sha256$870000$ESaJhxm1NXxsDIpzGpk2S4$Mp8eSsKAtnC/QqsqGEZv9EEGiPObRWnplOJ8fM9eIMY=",
+            "password": "pbkdf2_sha256$870000$8jxMU6cvrLVVcaiOHN68Ee$yGrHazWN9rhYuZtWzStS/+OoGadnehLdO06LmqOzWEU=",
             "role": "patient",
             "email": "frankred@healthcareims.com"
         }
@@ -174,7 +174,7 @@
         "pk": 18,
         "fields": {
             "username": "graceyellow",
-            "password": "pbkdf2_sha256$870000$NZ4fZprBrIiqaE8bbvgBEo$d0RO1cwHp2m5uK7ff5FL5TKZd0Hj7kZQc8XaP4/hQJY=",
+            "password": "pbkdf2_sha256$870000$C4h4GEU5krXNE40yB00cfk$RAVtkwKehIyarx32PijiLI+RgnTOMa/OwmPTpxcmE9g=",
             "role": "patient",
             "email": "graceyellow@healthcareims.com"
         }
@@ -184,7 +184,7 @@
         "pk": 19,
         "fields": {
             "username": "henrypurple",
-            "password": "pbkdf2_sha256$870000$jJoRmPGuG4E1uilsCU1N41$XLlei+DDNRmLZaYvvk1fz50G3F5sPWumiYn8DGkr0Xw=",
+            "password": "pbkdf2_sha256$870000$THJ2XvnkpfyfV5s4zXJD03$olXQapUYdqR/3J+nc5ng+ar5rSDQ8Hnu6/+jTibPszU=",
             "role": "patient",
             "email": "henrypurple@healthcareims.com"
         }
@@ -194,7 +194,7 @@
         "pk": 20,
         "fields": {
             "username": "islapink",
-            "password": "pbkdf2_sha256$870000$ficuwu1L6P25dALR1ATOCs$tYCpJ6AxAnm5l/FHzT/Svgodrguk2AlvtW1xG3Rq34s=",
+            "password": "pbkdf2_sha256$870000$W6McKR9rclikeoU6YZImX5$AW88sLzGeQ3YjT1+FUBnX1hvGELZAHWuz/Il50oQ960=",
             "role": "patient",
             "email": "islapink@healthcareims.com"
         }
@@ -204,7 +204,7 @@
         "pk": 21,
         "fields": {
             "username": "jackgrey",
-            "password": "pbkdf2_sha256$870000$lQ5O6DsHeMCu0xrRrS6yLx$ucBIELv1AV6M/K0iQutsvAvRjfyIBrKJHghRuotj8Q4=",
+            "password": "pbkdf2_sha256$870000$eRnN4cuU798Zta7nrxKRwl$/ZTx0Dz/cmvrDbzs1CASWxiL5KQdCGuqspjNHogy2Xo=",
             "role": "patient",
             "email": "jackgrey@healthcareims.com"
         }
@@ -214,7 +214,7 @@
         "pk": 22,
         "fields": {
             "username": "karenblack",
-            "password": "pbkdf2_sha256$870000$fBB1EhWyhIi2iWGtD9s5sw$ai58y+ZPvU+vaJir2SE0/1doC6eKtAoabuXhio/opHw=",
+            "password": "pbkdf2_sha256$870000$M0drBtY3qMXsYz4bY5KOzp$7P7fhJcbBYlQ0TK35cnEOjnmTkhrJ5JX9ctoM1KK93I=",
             "role": "patient",
             "email": "karenblack@healthcareims.com"
         }
@@ -224,7 +224,7 @@
         "pk": 23,
         "fields": {
             "username": "louiseclear",
-            "password": "pbkdf2_sha256$870000$d5IVJFIB8SJWGOiO0Mp08s$lP3+5KxrEAeA6F9I5DI9+3k+GP8bxotXrmF9wDeo1kE=",
+            "password": "pbkdf2_sha256$870000$kn9NC6vFrqNQBVVQLDj8XY$9iJfhb345fu3N6LdHkY/K667CsdYHHfpj73Qoy9i+kE=",
             "role": "patient",
             "email": "louiseclear@healthcareims.com"
         }
@@ -234,7 +234,7 @@
         "pk": 24,
         "fields": {
             "username": "martinsilver",
-            "password": "pbkdf2_sha256$870000$DAqABwIYm3XNT88nTt0SoV$1jTP5O9TgEhgxdysWvlW6T8oxpwJBWmTcUpTne4BWDg=",
+            "password": "pbkdf2_sha256$870000$gQxLqQOi5cCyme5LJ1J9Lx$hUfd+AaSK29pqtgEndZeat2t0dM7smeaSOrEUiQOg9I=",
             "role": "patient",
             "email": "martinsilver@healthcareims.com"
         }
@@ -244,7 +244,7 @@
         "pk": 25,
         "fields": {
             "username": "nataliedee",
-            "password": "pbkdf2_sha256$870000$KlAojYajaQX26KBv3qCzoO$stbizyIDy+hODVgG/REf8wCnwO9CcZpT0ngwsHmhOUM=",
+            "password": "pbkdf2_sha256$870000$Becb9oYnYVuKvtajG8KQLx$wCZydJeMKaQZWbemkfCrwnzL0xMHbsKysEWQwbqRYN4=",
             "role": "patient",
             "email": "nataliedee@healthcareims.com"
         }
@@ -254,7 +254,7 @@
         "pk": 26,
         "fields": {
             "username": "owengray",
-            "password": "pbkdf2_sha256$870000$aJMqEqMjOGPLxwB6W6dcKR$w/X4rFYWBFsXXOupVWnFtmibFqotd2ucOrrvRmn5S1M=",
+            "password": "pbkdf2_sha256$870000$QuL6RsUUuE458gs6kpar0k$GMchCV/RGJATU0Oyn6tXwl2paVh9CmtKwXAqGSPNr3E=",
             "role": "patient",
             "email": "owengray@healthcareims.com"
         }
@@ -264,7 +264,7 @@
         "pk": 27,
         "fields": {
             "username": "paulmcginn",
-            "password": "pbkdf2_sha256$870000$dhBUYoWfShqYmXO5z4yZnV$oG+ARQNPQMEGwpZzgZQwY9HTQMeMclI3RsoYkAFMyxc=",
+            "password": "pbkdf2_sha256$870000$0Vx73PwNvsDxqqzgBDVyw8$dBB3K4UQOMbyfwylZ75VxKZrG7YExUiuB1iSmA6TMRw=",
             "role": "patient",
             "email": "paulmcginn@healthcareims.com"
         }
@@ -274,7 +274,7 @@
         "pk": 28,
         "fields": {
             "username": "quincyblue",
-            "password": "pbkdf2_sha256$870000$FGGI8VvxdTGSDO6FvbXfA5$sO8vhqQFaQLntxE8U8KOy+EFSFISC7JjJPPYePhoBw8=",
+            "password": "pbkdf2_sha256$870000$tjS2xPIVPdxU0UeBSwzwSv$RuHEuRlE5qst2WjmswDcsXSUoafDLJBCgCkwNGrXxe0=",
             "role": "patient",
             "email": "quincyblue@healthcareims.com"
         }
@@ -284,7 +284,7 @@
         "pk": 29,
         "fields": {
             "username": "rachelfox",
-            "password": "pbkdf2_sha256$870000$bsaZxwgcQsOdgAjzt9oHXi$xYFhmC9KF6FBIlNOeBkpsPug+xD/94HTbz4QMHAtQ5E=",
+            "password": "pbkdf2_sha256$870000$XLb1y2uOxhwftCghDL82KK$MRtctR5oL8lnR8sg7nXZ6JJx8i3k9Ha8R2X3kc3ndvo=",
             "role": "patient",
             "email": "rachelfox@healthcareims.com"
         }
@@ -294,7 +294,7 @@
         "pk": 30,
         "fields": {
             "username": "samuelgreen",
-            "password": "pbkdf2_sha256$870000$cF7gMW3KzUDI21t8TKJzpo$0EF8q0MX1Ih8PCnGGB6Te4A06c7icBZMYMuuuQLkApE=",
+            "password": "pbkdf2_sha256$870000$HNSsWksOaXENzCdzqs3i9b$o8L6QyRF1djvsTQJEBxYxn2f8jkXnoA7jBKf0fv/as8=",
             "role": "patient",
             "email": "samuelgreen@healthcareims.com"
         }
@@ -304,7 +304,7 @@
         "pk": 31,
         "fields": {
             "username": "tessawhite",
-            "password": "pbkdf2_sha256$870000$nWti21L9jc4VbKov8ygUtD$CKVUe+Z2tPrIuTzRqx3K4mkWO1YVP3n9dFwR4kIvv+8=",
+            "password": "pbkdf2_sha256$870000$vyiJJNoub2rHYmwodWt49H$GgbuhvFpq7KIUtcmPGbSeRd/yJ89+a1CmnQjoZ4MxW0=",
             "role": "patient",
             "email": "tessawhite@healthcareims.com"
         }
@@ -706,7 +706,8 @@
             "type": "X-ray",
             "timestamp": "2025-01-22T10:00:00",
             "classification": "Normal",
-            "patient": 1
+            "patient": 1,
+            "file": "images/default.png"
         }
     },
     {
@@ -716,7 +717,8 @@
             "type": "MRI",
             "timestamp": "2025-01-22T11:00:00",
             "classification": "Abnormal",
-            "patient": 2
+            "patient": 2,
+            "file": "images/default.png"
         }
     },
     {
@@ -726,7 +728,8 @@
             "type": "X-ray",
             "timestamp": "2025-01-22T12:00:00",
             "classification": "Normal",
-            "patient": 3
+            "patient": 3,
+            "file": "images/default.png"
         }
     },
     {
@@ -736,7 +739,8 @@
             "type": "Ultrasound",
             "timestamp": "2025-01-22T13:00:00",
             "classification": "Normal",
-            "patient": 4
+            "patient": 4,
+            "file": "images/default.png"
         }
     },
     {
@@ -746,7 +750,8 @@
             "type": "CT Scan",
             "timestamp": "2025-01-22T14:00:00",
             "classification": "Abnormal",
-            "patient": 5
+            "patient": 5,
+            "file": "images/default.png"
         }
     },
     {
@@ -756,7 +761,8 @@
             "type": "MRI",
             "timestamp": "2025-01-22T15:00:00",
             "classification": "Normal",
-            "patient": 6
+            "patient": 6,
+            "file": "images/default.png"
         }
     },
     {
@@ -766,7 +772,8 @@
             "type": "X-ray",
             "timestamp": "2025-01-22T16:00:00",
             "classification": "Abnormal",
-            "patient": 7
+            "patient": 7,
+            "file": "images/default.png"
         }
     },
     {
@@ -776,7 +783,8 @@
             "type": "Ultrasound",
             "timestamp": "2025-01-22T17:00:00",
             "classification": "Normal",
-            "patient": 8
+            "patient": 8,
+            "file": "images/default.png"
         }
     },
     {
@@ -786,7 +794,8 @@
             "type": "CT Scan",
             "timestamp": "2025-01-22T18:00:00",
             "classification": "Normal",
-            "patient": 9
+            "patient": 9,
+            "file": "images/default.png"
         }
     },
     {
@@ -796,7 +805,8 @@
             "type": "X-ray",
             "timestamp": "2025-01-22T19:00:00",
             "classification": "Abnormal",
-            "patient": 10
+            "patient": 10,
+            "file": "images/default.png"
         }
     },
     {

@@ -9,7 +9,6 @@ import {
     deletePatient,
     fetchInvoices,
 } from "../api";
-import "../styles/Dashboard.css";
 import Page from "../components/Page";
 import styled from 'styled-components';
 
@@ -23,7 +22,6 @@ const Dashboard = styled.div`
 const Card = styled.div`
     background: white;
     padding: 1.5rem;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     border-radius: 8px;
     width: 100%;
 
@@ -88,6 +86,10 @@ const Buttons = styled.div`
         &.delete {
             color: red;
         }
+
+        &.other {
+            color: teal;
+        }
     }
 `;
 
@@ -96,6 +98,13 @@ const ListItem = styled.li`
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    padding: 7px;
+    border-radius: 4px;
+    transition: all .25s ease-in-out;
+
+    &:hover {
+        background-color: aquamarine;
+    }
 `;
 
 const Admin = () => {
@@ -221,7 +230,11 @@ const Admin = () => {
                                         {index + 1}. <span className="name">{patient.name}</span> - {patient.address} - {patient.conditions}
                                     </div>
                                     <Buttons>
-                                        <button onClick={() => navigate(`/patients/${patient.patient_id}/images`)} className="crud">View Images</button>
+                                        <button onClick={() => navigate(`/patients/${patient.patient_id}/reports`)} className="crud other">View Reports</button>
+                                        <button onClick={() => navigate(`/patients/${patient.patient_id}/add-report`)} className="crud other">Add Report</button>
+                                        <button onClick={() => navigate(`/patients/${patient.patient_id}/images`)} className="crud other">View Images</button>
+                                        <button onClick={() => navigate(`/invoices/${patient.patient_id}`)} className="crud other">View Invoices</button>
+                                        <button onClick={() => navigate(`/invoices/${patient.patient_id}/create`)} className="crud other">Create Invoice</button>
                                         <button onClick={() => navigate(`/update-patient/${patient.patient_id}`)} className="crud">Edit</button>
                                         <button onClick={() => handleDeletePatient(patient.patient_id)} className="crud delete">Delete</button>
                                     </Buttons>

@@ -5,11 +5,15 @@ import Admin from "./pages/Admin";
 import MedicalStaff from "./pages/MedicalStaff";
 import Patient from "./pages/Patient";
 import NotFound from "./pages/NotFound";
-import MedicalStaffRegistrationForm from "./components/MedicalStaffRegistrationForm";
-import PatientRegistrationForm from "./components/PatientRegistrationForm";
-import UpdateMedicalStaffForm from "./components/UpdateMedicalStaffForm";
-import UpdatePatientForm from "./components/UpdatePatientForm";
-import ViewPatientImages from "./components/ViewPatientImages";
+import MedicalStaffRegistrationForm from "./pages/MedicalStaffRegistrationForm";
+import PatientRegistrationForm from "./pages/PatientRegistrationForm";
+import UpdateMedicalStaffForm from "./pages/UpdateMedicalStaffForm";
+import UpdatePatientForm from "./pages/UpdatePatientForm";
+import ViewPatientImages from "./pages/ViewPatientImages";
+import ViewReports from "./pages/ViewReports";
+import AddReport from "./pages/AddReport";
+import ViewInvoicesAndPayments from "./pages/ViewInvoicesAndPayments";
+import CreateInvoice from "./pages/CreateInvoice";
 
 function App() {
   const { user } = useAuth();
@@ -60,6 +64,22 @@ function App() {
         <Route
           path="/patients/:patientId/images"
           element={<ViewPatientImages />}
+        />
+        <Route
+          path="/patients/:patientId/reports"
+          element={<ViewReports />}
+        />
+        <Route
+          path="/patients/:patientId/add-report"
+          element={<AddReport />}
+        />
+        <Route
+          path="/invoices/:patientId"
+          element={<ViewInvoicesAndPayments />}
+        />
+        <Route
+          path="/invoices/:patientId/create"
+          element={<CreateInvoice />}
         />
       </Routes>
     </BrowserRouter>
